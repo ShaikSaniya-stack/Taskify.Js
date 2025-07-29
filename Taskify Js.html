@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="view port" content="width=device-width,initial-scale=1.0>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>To-Do List</title>
 </head>
 <body>
@@ -13,15 +13,15 @@
 
   <script>
     function addTask() {
-      const taskText = document.getElementById('task').value;
+    const taskText = document.getElementById('task').value;
       if (taskText) {
         const li = document.createElement('li');
         li.innerText = taskText;
-        li.onclick = () => li.remove(); // click to delete
+        li.onclick = () => li.remove(); 
         document.getElementById('list').appendChild(li);
-        document.getElementById('task').value = '';
-      }
+        document.getElementById('task').value = " ";
+       }
     }
-  </script>
+ </script>
 </body>
 </html>
